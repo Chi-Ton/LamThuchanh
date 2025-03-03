@@ -15,7 +15,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>23</maven.compiler.release>
         <exec.mainClass>com.mycompany.student.Student</exec.mainClass>
-        <testng.version>7.8.0</testng.version> <!-- Định nghĩa phiên bản TestNG như một property -->
+        <testng.version>7.8.0</testng.version>
     </properties>
 
     <!-- Các dependencies -->
@@ -36,7 +36,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.11.0</version> <!-- Sử dụng phiên bản mới nhất -->
+                <version>3.11.0</version>
                 <configuration>
                     <release>${maven.compiler.release}</release>
                     <source>${maven.compiler.release}</source>
@@ -48,13 +48,13 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.2.5</version> <!-- Sử dụng phiên bản mới nhất -->
+                <version>3.2.5</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>testng.xml</suiteXmlFile> <!-- Tùy chọn, nếu bạn dùng file testng.xml -->
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <includes>
-                        <include>**/*Test.java</include> <!-- Bao gồm tất cả file test kết thúc bằng Test -->
+                        <include>**/*Test.java</include>
                     </includes>
                 </configuration>
             </plugin>
